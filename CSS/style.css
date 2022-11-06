@@ -153,7 +153,7 @@ nav a:hover{
       color: #3d5a80;
       background-color: #fff;
       border-radius: .375rem;
-
+      margin-bottom:10px;
 }
 .card:hover{
        box-shadow: 0 .5rem .75rem 0 rgba(0,0,0,1)
