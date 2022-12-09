@@ -51,7 +51,11 @@ nav a:hover{
       color:#ffffff; 
 }
 
-
+.resources{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+}
 .paragraph li{
       list-style: none;
 }
