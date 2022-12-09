@@ -216,6 +216,12 @@ a:hover{
       padding-left: 6rem;
       padding-right: 6rem;
 }
+nav span{
+  display: none;
+}
+nav .closebtn{
+  display: none;
+}
 
 
 .basic {
