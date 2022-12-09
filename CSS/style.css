@@ -398,6 +398,8 @@ a{
     background-color: #252525;
 }
 
+
+
 footer {
   text-align: center;
   padding: 3px;
@@ -545,3 +547,9 @@ nav span{
         max-width: 90%;
     }
 }
+
+@media (max-width:412px){
+.resources iframe{
+  width:400;
+  
+}}
