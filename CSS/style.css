@@ -228,7 +228,7 @@ a:hover{
 .basic {
       background-color: white;
       float: left;
-      width: 33.3%;
+      width: 20%;
       padding: .5rem;
       padding-top: 2.5rem;
 
@@ -237,7 +237,7 @@ a:hover{
 .premium {
       background-color: white;
       float: left;
-      width: 33.3%;
+      width: 20%;
       padding: .5rem;
       padding-top: 1.875rem;
 
