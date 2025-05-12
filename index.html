@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,21 +8,42 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 </head>
+
 <body class="bg-[#080B26] text-white font-sans">
   <!-- Navbar -->
-<header class="bg-[#05082B] text-white shadow-md sticky top-0 z-50">
-  <nav class="max-w-7xl mx-auto flex items-center justify-between p-4">
-    <div class="text-xl font-bold">Maya Driving School</div>
-    <ul class="hidden md:flex space-x-6 text-sm">
-      <li><a href="#about" class="hover:text-blue-400">About</a></li>
-      <li><a href="#pricing" class="hover:text-blue-400">Pricing</a></li>
-      <li><a href="#training" class="hover:text-blue-400">Training</a></li>
-      <li><a href="#location" class="hover:text-blue-400">Location</a></li>
-      <li><a href="/pwa/" class="bg-blue-600 text-white px-3 py-1 rounded hover:bg-blue-500">Booking</a></li>
-    </ul>
-  </nav>
-</header>
-  <!-- Mobile Navbar -->
+  <header class="bg-[#05082B] text-white shadow-md sticky top-0 z-50">
+    <nav class="max-w-7xl mx-auto flex items-center justify-between p-4">
+      <div class="text-xl font-bold">Maya Driving School</div>
+
+      <!-- Desktop Nav -->
+      <ul class="hidden md:flex space-x-6 text-sm">
+        <li><a href="#about" class="hover:text-blue-400">About</a></li>
+        <li><a href="#pricing" class="hover:text-blue-400">Pricing</a></li>
+        <li><a href="#training" class="hover:text-blue-400">Training</a></li>
+        <li><a href="#location" class="hover:text-blue-400">Location</a></li>
+        <li><a href="/pwa/" class="bg-blue-600 text-white px-3 py-1 rounded hover:bg-blue-500">Booking</a></li>
+      </ul>
+
+      <!-- Mobile menu button -->
+      <button id="menu-btn" class="md:hidden focus:outline-none">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </nav>
+
+    <!-- Mobile Nav Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-[#05082B] border-t border-blue-800">
+      <ul class="flex flex-col space-y-2 p-4 text-sm">
+        <li><a href="#about" class="hover:text-blue-400">About</a></li>
+        <li><a href="#pricing" class="hover:text-blue-400">Pricing</a></li>
+        <li><a href="#training" class="hover:text-blue-400">Training</a></li>
+        <li><a href="#location" class="hover:text-blue-400">Location</a></li>
+        <li><a href="/pwa/" class="bg-blue-600 text-white px-3 py-1 rounded hover:bg-blue-500">Booking</a></li>
+      </ul>
+    </div>
+  </header>
+
 
   <!-- Hero Slideshow -->
   <section class="relative h-screen overflow-hidden">
@@ -39,24 +61,27 @@
     </div>
   </section>
   <!-- About Section -->
-   <section id="about" class="p-8 bg-[#0B0F30] text-white">
-  <div class="max-w-5xl mx-auto">
-    <h2 class="text-3xl font-bold mb-4">About</h2>
-    <p class="text-lg mb-4">
-      Since 1999, Maya Driving School has trained thousands of confident drivers. The joyful reviews of our former students and the passionate dedication of our instructors are a testament to our quality.
-    </p>
-    <p class="text-lg mb-4">
-      Unlike other driving schools, we teach each aspect of the vehicle before touching the road. Our step-by-step method ensures a solid understanding of road rules, vehicle control, and real-world scenarios.
-    </p>
-    <p class="text-lg">
-      From reverse parking to narrow road handling and hill climbs, our expert-designed syllabus prepares you for any driving challenge — with the confidence to match.
-    </p>
-  </div>
-</section>
+  <section id="about" class="p-8 bg-[#0B0F30] text-white">
+    <div class="max-w-5xl mx-auto">
+      <h2 class="text-3xl font-bold mb-4">About</h2>
+      <p class="text-lg mb-4">
+        Since 1999, Maya Driving School has trained thousands of confident drivers. The joyful reviews of our former
+        students and the passionate dedication of our instructors are a testament to our quality.
+      </p>
+      <p class="text-lg mb-4">
+        Unlike other driving schools, we teach each aspect of the vehicle before touching the road. Our step-by-step
+        method ensures a solid understanding of road rules, vehicle control, and real-world scenarios.
+      </p>
+      <p class="text-lg">
+        From reverse parking to narrow road handling and hill climbs, our expert-designed syllabus prepares you for any
+        driving challenge — with the confidence to match.
+      </p>
+    </div>
+  </section>
 
 
   <!-- Pricing Cards -->
-<section id="pricing" class="p-6">
+  <section id="pricing" class="p-6">
     <h2 class="text-3xl font-bold mb-6 text-center">Pricing</h2>
     <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
       <!-- Existing Cards + Two More -->
@@ -121,15 +146,25 @@
   </section>
 
   <!-- Learners Training Section -->
-<section id="training" class="p-6 overflow-x-auto">
+  <section id="training" class="p-6 overflow-x-auto">
     <h2 class="text-3xl font-bold mb-4">Learners Training</h2>
     <div class="flex gap-4 whitespace-nowrap">
-      <iframe src="https://docs.google.com/presentation/d/1R_9OU0OcoNnX4WtQCdiOZ23twJmn84P59nZmT9q1i_A/embed?start=false&loop=true&delayms=3000" class="w-[300px] h-[200px] rounded shadow"></iframe>
-      <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRlrRb2HxZy6ROk6Sk0jgHNEzh1TCRVmF5SqCCXk5snGNlFYdmkh2Lk5S5En1i5wvYoqfQROVuWIOpG/embed?start=false&loop=false&delayms=3000" class="w-[300px] h-[200px] rounded shadow"></iframe>
+      <iframe
+        src="https://docs.google.com/presentation/d/1R_9OU0OcoNnX4WtQCdiOZ23twJmn84P59nZmT9q1i_A/embed?start=false&loop=true&delayms=3000"
+        class="w-[300px] h-[200px] rounded shadow"></iframe>
+      <iframe
+        src="https://docs.google.com/presentation/d/e/2PACX-1vRlrRb2HxZy6ROk6Sk0jgHNEzh1TCRVmF5SqCCXk5snGNlFYdmkh2Lk5S5En1i5wvYoqfQROVuWIOpG/embed?start=false&loop=false&delayms=3000"
+        class="w-[300px] h-[200px] rounded shadow"></iframe>
       <iframe src="https://www.youtube.com/embed/JjFz6df_B6c" class="w-[300px] h-[200px] rounded shadow"></iframe>
-      <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTieRGZ0b9zXACMvdjC_k08QGnrf3cZdgnFk71IPlO2bjtxTXQ5-wKJbNEAv1hyu-_Uy-2cs9j37b3W/embed?start=true&loop=true&delayms=3000" class="w-[300px] h-[200px] rounded shadow"></iframe>
-      <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQDbK7-QHmaGSBXEirDgTKrp-OLi0eYt6wOQauKvh6L0ebTMEWfpSIdVWea1EZ0d5dTzAtbDju7Dd1E/embed?start=false&loop=true&delayms=3000" class="w-[300px] h-[200px] rounded shadow"></iframe>
-      <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQZlkid7EuQTZHdZ3_vzkM_z5gbNpCApNm_CudsneYlME3xVz7zcdKcXkpG8uwhU1Hj5VhGJBu0tYHC/embed?start=false&loop=true&delayms=3000" class="w-[300px] h-[200px] rounded shadow"></iframe>
+      <iframe
+        src="https://docs.google.com/presentation/d/e/2PACX-1vTieRGZ0b9zXACMvdjC_k08QGnrf3cZdgnFk71IPlO2bjtxTXQ5-wKJbNEAv1hyu-_Uy-2cs9j37b3W/embed?start=true&loop=true&delayms=3000"
+        class="w-[300px] h-[200px] rounded shadow"></iframe>
+      <iframe
+        src="https://docs.google.com/presentation/d/e/2PACX-1vQDbK7-QHmaGSBXEirDgTKrp-OLi0eYt6wOQauKvh6L0ebTMEWfpSIdVWea1EZ0d5dTzAtbDju7Dd1E/embed?start=false&loop=true&delayms=3000"
+        class="w-[300px] h-[200px] rounded shadow"></iframe>
+      <iframe
+        src="https://docs.google.com/presentation/d/e/2PACX-1vQZlkid7EuQTZHdZ3_vzkM_z5gbNpCApNm_CudsneYlME3xVz7zcdKcXkpG8uwhU1Hj5VhGJBu0tYHC/embed?start=false&loop=true&delayms=3000"
+        class="w-[300px] h-[200px] rounded shadow"></iframe>
     </div>
   </section>
 
@@ -158,5 +193,32 @@
     showSlide(current);
     setInterval(nextSlide, 4000);
   </script>
+  <script>
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    let menuOpen = false;
+
+    // Initially hide menu (and no GSAP jump)
+    gsap.set(mobileMenu, { height: 0, opacity: 0, display: 'none' });
+
+    menuBtn.addEventListener('click', () => {
+      if (!menuOpen) {
+        gsap.set(mobileMenu, { display: 'block' });
+        gsap.to(mobileMenu, { height: 'auto', opacity: 1, duration: 0.4, ease: 'power2.out' });
+      } else {
+        gsap.to(mobileMenu, {
+          height: 0,
+          opacity: 0,
+          duration: 0.3,
+          ease: 'power2.in',
+          onComplete: () => {
+            gsap.set(mobileMenu, { display: 'none' });
+          }
+        });
+      }
+      menuOpen = !menuOpen;
+    });
+  </script>
+
 </body>
 </html>
