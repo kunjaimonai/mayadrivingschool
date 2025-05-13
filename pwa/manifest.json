@@ -1,11 +1,11 @@
 {
-    "name": "mds",
-    "short_name": "mds",
+    "name": "maya_driving_school",
+    "short_name": "mayadrivingschool",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#ffffff",
     "theme_color": "#ffffff",
-    "description": "A new Flutter project.",
+    "description": "Book and manage your driving lessons with Maya Driving School",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [
