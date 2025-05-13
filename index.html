@@ -9,7 +9,26 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
   <link rel="icon" href="/Images/learners logo.ico" type="image/png" />
 </head>
-
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            dark: {
+              900: '#0d1326',
+              800: '#161e36',
+              700: '#1e2c56',
+              600: '#2a3e78'
+            },
+            blue: {
+              accent: '#4d7cfe',
+              light: '#6b8fff'
+            }
+          }
+        }
+      }
+    }
+  </script>
 <body class="bg-[#080B26] text-white font-sans">
   <!-- Navbar -->
   <header class="bg-[#05082B] text-white shadow-md sticky top-0 z-50">
@@ -67,29 +86,120 @@
     </div>
   </section>
   <!-- About Section -->
-  <section id="about" class="p-8 bg-[#0B0F30] text-white">
-    <div class="max-w-5xl mx-auto">
-      <h2 class="text-3xl font-bold mb-4">About</h2>
-      <p class="text-lg mb-4">
-        Since 1999, Maya Driving School has trained thousands of confident drivers. The joyful reviews of our former
-        students and the passionate dedication of our instructors are a testament to our quality.
-      </p>
-      <p class="text-lg mb-4">
-        Unlike other driving schools, we teach each aspect of the vehicle before touching the road. Our step-by-step
-        method ensures a solid understanding of road rules, vehicle control, and real-world scenarios.
-      </p>
-      <p class="text-lg">
-        From reverse parking to narrow road handling and hill climbs, our expert-designed syllabus prepares you for any
-        driving challenge — with the confidence to match.
-      </p>
+  <section class="max-w-6xl mx-auto px-4 py-16 sm:py-24  fade-in-section min-h-screen">
+    <!-- Section Header -->
+    <div class="text-center mb-16">
+      <h1 class="text-4xl font-bold text-white mb-3 relative inline-block">
+        About Maya Driving School
+        <span class="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-16 h-1 bg-blue-accent -mb-2"></span>
+      </h1>
+      <p class="text-blue-200 text-lg mt-6">Excellence in driver education since 1999</p>
+    </div>
+    
+    <!-- About Cards -->
+    <div class="flex flex-col space-y-6">
+      <!-- Card 1 -->
+      <div class="bg-dark-800 rounded-xl p-6 shadow-lg border border-dark-600 transform transition duration-300 hover:-translate-y-1 hover:shadow-xl">
+        <p class="text-gray-200">
+          Since 1999, Maya Driving School has trained thousands of confident drivers. The joyful reviews of our former students and the passionate dedication of our instructors are a testament to our quality.
+        </p>
+      </div>
+      
+      <!-- Card 2 -->
+      <div class="bg-dark-800 rounded-xl p-6 shadow-lg border border-dark-600 transform transition duration-300 hover:-translate-y-1 hover:shadow-xl">
+        <p class="text-gray-200">
+          Unlike other driving schools, we teach each aspect of the vehicle before touching the road. Our step-by-step method ensures a solid understanding of road rules, vehicle control, and real-world scenarios.
+        </p>
+      </div>
+      
+      <!-- Card 3 -->
+      <div class="bg-dark-800 rounded-xl p-6 shadow-lg border border-dark-600 transform transition duration-300 hover:-translate-y-1 hover:shadow-xl">
+        <p class="text-gray-200">
+          From reverse parking to narrow road handling and hill climbs, our expert-designed syllabus prepares you for any driving challenge — with the confidence to match.
+        </p>
+      </div>
+    </div>
+    
+    <!-- Syllabus and License Section -->
+    <div class="mt-20">
+      <h2 class="text-3xl font-bold text-center text-white mb-12">Syllabus & License Proofs</h2>
+      
+      <div class="grid md:grid-cols-2 gap-8">
+        <!-- Syllabus Card -->
+        <div class="bg-dark-800 rounded-xl shadow-lg overflow-hidden">
+          <div class="bg-gradient-to-r from-dark-700 to-dark-600 py-4 px-6">
+            <h3 class="text-xl font-semibold text-white">SYLLABUS</h3>
+          </div>
+          <ul class="p-6 space-y-4">
+            <li class="flex items-start">
+              <span class="bg-blue-accent h-5 w-5 rounded-full mr-3 mt-1 flex-shrink-0"></span>
+              <span>Direction and Speed Controls</span>
+            </li>
+            <li class="flex items-start">
+              <span class="bg-blue-accent h-5 w-5 rounded-full mr-3 mt-1 flex-shrink-0"></span>
+              <span>Reverse Parking Fully Mirror System</span>
+            </li>
+            <li class="flex items-start">
+              <span class="bg-blue-accent h-5 w-5 rounded-full mr-3 mt-1 flex-shrink-0"></span>
+              <span>Road Regulations</span>
+            </li>
+            <li class="flex items-start">
+              <span class="bg-blue-accent h-5 w-5 rounded-full mr-3 mt-1 flex-shrink-0"></span>
+              <span>Narrow Road with Hill Climbing and Turns</span>
+            </li>
+            <li class="flex items-start">
+              <span class="bg-blue-accent h-5 w-5 rounded-full mr-3 mt-1 flex-shrink-0"></span>
+              <span>Main Road & Town</span>
+            </li>
+          </ul>
+        </div>
+        
+        <!-- License Proofs Card -->
+        <div class="bg-dark-800 rounded-xl shadow-lg overflow-hidden">
+          <div class="bg-gradient-to-r from-dark-700 to-dark-600 py-4 px-6">
+            <h3 class="text-xl font-semibold text-white">PROOFS NEEDED FOR LICENSE APPLICATION</h3>
+          </div>
+          <ul class="p-6 space-y-4">
+            <li class="flex items-start">
+              <span class="inline-flex items-center justify-center bg-blue-600 text-white rounded-full h-5 w-5 text-xs font-bold mr-3 mt-1 flex-shrink-0">1</span>
+              <span>SSLC/Birth Certificate (for age proof)</span>
+            </li>
+            <li class="flex items-start">
+              <span class="inline-flex items-center justify-center bg-blue-600 text-white rounded-full h-5 w-5 text-xs font-bold mr-3 mt-1 flex-shrink-0">2</span>
+              <span>Aadhaar/Passport/Voter ID (address proof)</span>
+            </li>
+            <li class="flex items-start">
+              <span class="inline-flex items-center justify-center bg-blue-600 text-white rounded-full h-5 w-5 text-xs font-bold mr-3 mt-1 flex-shrink-0">3</span>
+              <span>3 Passport-size Photos</span>
+            </li>
+            <li class="flex items-start">
+              <span class="inline-flex items-center justify-center bg-blue-600 text-white rounded-full h-5 w-5 text-xs font-bold mr-3 mt-1 flex-shrink-0">4</span>
+              <span>Eye Certificate (issued by school post online submission)</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Already Have License -->
+    <div class="mt-16 bg-gradient-to-r from-dark-700 to-blue-900/70 rounded-xl p-6 shadow-lg border border-blue-900/30">
+      <h3 class="flex items-center text-xl font-semibold text-white mb-3">
+        <span class="flex items-center justify-center bg-blue-accent rounded-full w-6 h-6 mr-3">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+          </svg>
+        </span>
+        Already Have a License?
+      </h3>
+      <p class="ml-9 text-gray-200">Bring your existing DL card and Aadhaar for verification.</p>
     </div>
   </section>
 
 
   <!-- Pricing Cards -->
-  <section id="pricing" class="p-6">
+  <section id="pricing" class="fade-in-section min-h-screen p-6 flex items-center justify-center">
     <h2 class="text-3xl font-bold mb-6 text-center">Pricing</h2>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 flex items-center justify-center">
       <!-- Existing Cards + Two More -->
       <div class="bg-gradient-to-b from-blue-900 to-blue-500 p-6 rounded-xl shadow-md">
         <h3 class="text-xl font-semibold">CAR</h3>
@@ -152,9 +262,9 @@
   </section>
 
   <!-- Learners Training Section -->
-  <section id="training" class="p-6 overflow-x-auto">
+  <section id="training" class="fade-in-section  p-6 ">
     <h2 class="text-3xl font-bold mb-4">Learners Training</h2>
-    <div class="flex gap-4 whitespace-nowrap">
+    <div class="flex gap-4 whitespace-nowrap overflow-x-auto">
       <iframe
         src="https://docs.google.com/presentation/d/1R_9OU0OcoNnX4WtQCdiOZ23twJmn84P59nZmT9q1i_A/embed?start=false&loop=true&delayms=3000"
         class="w-[300px] h-[200px] rounded shadow"></iframe>
@@ -320,6 +430,25 @@
       menuOpen = !menuOpen;
     });
   </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+<script>
+  gsap.registerPlugin(ScrollTrigger);
+
+  gsap.utils.toArray(".fade-in-section").forEach(section => {
+    gsap.from(section, {
+      opacity: 0,
+      y: 50,
+      duration: 1,
+      ease: "power2.out",
+      scrollTrigger: {
+        trigger: section,
+        start: "top 80%",
+        toggleActions: "play none none none"
+      }
+    });
+  });
+</script>
+
 
 </body>
 </html>
