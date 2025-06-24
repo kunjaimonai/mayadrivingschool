@@ -1,7 +1,3 @@
-Here’s a **Privacy Policy** tailored for the **Maya Driving School** app (Version 2.0.9), suitable for submission to the **Google Play Store**. This version assumes your app collects basic user data such as name, contact information, profile photo, and booking details, with admin-controlled workflows and no third-party advertising or analytics SDKs.
-
----
-
 **Privacy Policy for Maya Driving School App**
 
 **Effective Date: 24-06-2025 
